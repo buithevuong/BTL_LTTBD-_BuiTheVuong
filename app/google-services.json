@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "755990005722",
+    "project_id": "buithevuongbtl",
+    "storage_bucket": "buithevuongbtl.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:755990005722:android:4eb3cd4e057f38ae8762e3",
+        "android_client_info": {
+          "package_name": "com.example.buithevuong_btl_android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "755990005722-a8hqrb3ea4cdic74hl69si411u4anuhu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIjt0vgh2s2ZJx8zA19sgHMrMzXU5CzS8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "755990005722-a8hqrb3ea4cdic74hl69si411u4anuhu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

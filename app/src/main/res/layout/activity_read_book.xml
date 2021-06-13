@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/TitleBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="TITLE"
+            android:textAlignment="center"
+            android:textColor="@color/teal_700"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/AuthorBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="TITLE"
+            android:textAlignment="center"
+            android:textColor="@color/purple_500"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:id="@+id/imageBookReader"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="10dp"/>
+
+
+        <TextView
+            android:id="@+id/contentBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"/>
+
+        <RatingBar
+            android:id="@+id/RateBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:rating="0"
+            android:numStars="5"
+            android:stepSize="1"/>
+        <Button
+            android:id="@+id/btnSendRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Rate"/>
+    </LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

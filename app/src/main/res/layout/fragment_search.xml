@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f7dc8b">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Search"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:background="#b86014"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+
+        <EditText
+            android:id="@+id/inputSearchBook"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Input Search..."/>
+
+        <Button
+            android:id="@+id/btnSearchBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/totalResultsSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Results"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:background="#b86014"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerBookSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="70dp"
+        />
+</LinearLayout>

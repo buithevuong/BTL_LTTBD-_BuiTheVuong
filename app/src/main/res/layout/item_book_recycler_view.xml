@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginVertical="2dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/image_book"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/title_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TITLE"
+            android:textColor="#5443f0"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toEndOf="@id/image_book"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/des_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:text="DESCRIPTION"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@id/image_book"
+            app:layout_constraintTop_toBottomOf="@id/title_book" />
+
+        <TextView
+            android:id="@+id/rate_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:text="Rate : 0/5"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@id/image_book"
+            app:layout_constraintTop_toBottomOf="@id/des_book"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

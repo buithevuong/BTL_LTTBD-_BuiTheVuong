@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:text="ADD NEW BOOK"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <Spinner
+            android:id="@+id/btnPickAvatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"/>
+            />
+
+        <ImageView
+            android:id="@+id/imageAvatarPicked"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtFullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Full Name"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="@color/teal_700"/>
+
+    <TextView
+        android:id="@+id/txtGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Gender"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="@color/teal_700"/>
+    <TextView
+        android:id="@+id/txtDateBirth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Date Birth"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="@color/teal_700"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ROLE : "
+            android:textSize="25dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/txtRole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="25dp"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/btnChangeRole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Role"
+            android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status :"
+            android:textColor="@color/purple_200"
+            android:textSize="25dp"/>
+        <RadioButton
+            android:id="@+id/radioEnable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable"/>
+        <RadioButton
+            android:id="@+id/radioDisable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disable"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/btnEditUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="EDIT"/>
+    <Button
+        android:id="@+id/btnBackManageUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="BACK"/>
+</LinearLayout>
